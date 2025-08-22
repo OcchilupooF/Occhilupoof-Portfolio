@@ -1572,3 +1572,24 @@ margin: 16px;
   .container-form a.contact-button,
   .container-form a.btn-scarica-cv{width:90%;}
 }
+
+/* CAROSELLO CERTIFICATI */
+.cert-carousel{position:relative;width:100%;margin:0 auto 80px auto;}
+.carousel-window{overflow:hidden;}
+.carousel-track{display:flex;gap:32px;list-style:none;margin:0;padding:0;animation:scroll-infinite 45s linear infinite;}
+.carousel-track:hover{animation-play-state:paused;}
+.carousel-track .slide{min-width:260px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;}
+.carousel-track img{width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.1));transition:transform .3s ease;}
+.carousel-track img:hover{transform:scale(1.05);} 
+@keyframes scroll-infinite{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(calc(-260px * 15 - 32px * 15));}
+}
+@media screen and (max-width:640px){
+  .carousel-track{gap:16px;animation:scroll-infinite-mobile 35s linear infinite;}
+  .carousel-track .slide{min-width:180px;}
+}
+@keyframes scroll-infinite-mobile{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(calc(-180px * 15 - 16px * 15));}
+}

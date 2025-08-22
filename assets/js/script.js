@@ -50,6 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
 
+    // Carousel certificati - solo animazione automatica
+    const carousel = document.querySelector('.cert-carousel');
+    if(carousel){
+      const track = carousel.querySelector('.carousel-track');
+      // Nessuna logica aggiuntiva necessaria - l'animazione CSS gestisce tutto
+    }
+
     // Chiude l'accordion se clicchi fuori
     document.addEventListener("click", function (event) {
       if (!event.target.closest(".accordion")) {
