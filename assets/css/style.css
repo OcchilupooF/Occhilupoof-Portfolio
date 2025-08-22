@@ -416,7 +416,7 @@ details p {
 }
 
 .service {
-  background-color: #CFD5CD;
+  background-color: #9eab9a;
   border-radius: 20px;
   color: rgb(0, 0, 0);
   text-align: center;
@@ -429,9 +429,10 @@ details p {
 }
 
 .service span{
-  color: #4f554d;
+  color: white;
   font-weight: normal;
   font-size: 4rem;
+  font-family: 'Damion', cursive;
 }
 .services__p{
   text-align: left;
@@ -601,10 +602,11 @@ margin-right: 12px;}
 .container-form{
   width: 100%;
   display: flex;
+  flex-direction: column; /* stack buttons */
   justify-content: center;
   align-items: center;
+  gap: 24px;
   margin: 80px 0;
-
 }
 
 .contact-form {
@@ -671,7 +673,7 @@ button:hover {
 /* FOOTER */
 
 footer {
-  background-color: #9eaa9a;
+  border-top: 1px solid black;
   color: #000000;
   padding: 24px 0;
   text-align: center;
@@ -706,7 +708,7 @@ footer {
 .contact-info p {
   font-size: 14px;
   margin-top: 12px;
-  color: #2f2f2f;
+  color: #9eab9a;
 }
 
 
@@ -1547,4 +1549,26 @@ margin: 16px;
 .nome-lungo{
   font-size: 8rem;
 }
+}
+
+/* Anchor buttons inside contact section */
+.container-form a.contact-button,
+.container-form a.btn-scarica-cv{
+  text-decoration:none;
+  text-align:center;
+  display:block;
+  max-width:480px; /* limit width on large screens */
+}
+
+.container-form .whatsapp-btn{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:4px;
+}
+
+@media screen and (max-width:640px){
+  .container-form{gap:16px;}
+  .container-form a.contact-button,
+  .container-form a.btn-scarica-cv{width:90%;}
 }

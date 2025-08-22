@@ -57,22 +57,3 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-
-
-
-
-
-
-document.getElementById("form").addEventListener("submit", function(event) {
-// Prevenire l'invio del form se uno dei campi è vuoto
-const name = document.getElementById("name").value;
-const email = document.getElementById("email").value;
-const message = document.getElementById("message").value;
-
-if (!name || !email || !message) {
-alert("Per favore, compila tutti i campi 🙏");
-event.preventDefault();
-} else {
-alert("Messaggio inviato! Ti risponderò a breve 😊");
-}
-});
