@@ -1,5 +1,5 @@
 body, html {
-  font-family: satoshi;
+  font-family: 'Poppins', Arial, sans-serif;
   line-height: 1.8;
   font-size: 16px;
   box-sizing: border-box;
@@ -44,7 +44,7 @@ body {
 }
 
 .section-header h2{
-  font-weight: bold; color: #4F554D;
+  font-weight: bold;
   letter-spacing: 2px;
 }
 .section-header h1{
@@ -86,7 +86,8 @@ body {
 /* NAVBAR */
 
 .logo {
-  width: 8rem;
+  width: 10rem; /* enlarged from 8rem */
+  max-width: 100%;
 }
 
 .navbar {
@@ -94,15 +95,14 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 24px auto;
-  padding: 24px 0;
-
+  margin: 8px auto 0; /* reduced to alzare la navbar */
+  padding: 8px 0 16px; /* meno spazio sopra */
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 40px; /* increased spacing */
 }
 .nav-links.active{
   margin-top: 24px;
@@ -114,6 +114,7 @@ body {
   color: black;
   font-weight: bold;
   position: relative;
+  white-space: nowrap; /* keep multi-word labels on one line */
 }
 
 .nav-links a::after {
@@ -145,8 +146,9 @@ body {
 }
 
 .contact-button:hover {
-  background-color: #4F554D;
+  background-color: #6eff00;
   border: none;
+  color: black;
 
 }
 
@@ -160,18 +162,17 @@ body {
 
 
 .hero {
-
-  background-image: url('../img/fotomia.jpg');
+  background-image: url('../img/disegnofra.webp');
   background-size: cover; /* Adatta l'immagine alla dimensione del div */
   background-position: center; /* Centra l'immagine */
   background-repeat: no-repeat;
   background-color: #9EAA9A;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 24px 40px;
+  align-items: center;
+  /* Rimuoviamo space-between per poter avvicinare nome e social in basso */
+  justify-content: flex-start;
+  padding: 8px 40px 64px 40px; /* meno spazio sopra per alzare la navbar */
   text-align: center;
   border-top: solid 1px #CFD5CD;
   border-bottom: solid 1px #CFD5CD;
@@ -179,15 +180,9 @@ body {
   height: 100vh;
 }
 
-.hero__content{
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 40px auto;
-  justify-items: center;
-}
+/* Old hero__content layout removed after redesign */
 
-.hero__content h1 {
+.hero__content h1 { /* keeping for backward compatibility if referenced */
   font-size: 2.8rem;
   margin: 0;
   color: #4F554D;
@@ -216,12 +211,14 @@ body {
   font-size: 8rem;
   font-weight: bolder;
   color: #ffffff;
-  margin: 0;
-    display: inline-block;
-    width: 100%;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    animation: slideIn 2s ease-out;
-    letter-spacing: 4px;
+  margin: 0 0 8px 0; /* piccolo spazio rispetto alle icone */
+  display: inline-block;
+  width: 100%;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 2s ease-out;
+  letter-spacing: 4px;
+  /* Spinge il blocco nome verso il basso vicino ai social */
+  margin-top: auto;
 }
 
 .nome-corto{
@@ -236,19 +233,20 @@ body {
   margin-right: 80px;
 }
 
+/* Social links subito sotto il nome */
 .hero__links {
-  padding: 24px;
+  margin: 48px auto 0 auto; /* distanza aumentata dal ruolo */
+  padding: 8px 32px;
   justify-content: center;
   align-items: center;
   display: flex;
   gap: 64px;
-  background-color: #CFD5CD;
-  border-radius: 0 1rem 1rem 0;
-  height: fit-content;
+  border-radius: 16px;
+  width: fit-content;
 }
 
 .link-social img {
-  width: 64px;
+  width: 48px;
   margin: auto;
   transition: transform 0.3s ease;
 }
@@ -288,7 +286,7 @@ margin: auto;
 }
 
 .profile-img-container{
-  width: 50%;
+  width: 20%;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -305,8 +303,8 @@ margin: auto;
 
 
 .btn-scarica-cv {
-  background-color:#000000;
-  color: #ffffff;
+  background-color:#37A400;
+  color: black;
   padding: 8px 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   border:none;
@@ -320,8 +318,8 @@ margin: auto;
 }
 
 .btn-scarica-cv:hover {
-  background-color: #4F554D;
-  color: #fff;
+  background-color: #6eff00;
+  color: black;
   border: none;
 }
 
@@ -389,6 +387,32 @@ details p {
   gap: 24px;
   padding: 24px 5% 80px 5%;
 
+}
+
+/* SINGOLO PROGETTO (sezione immagine + bottone) */
+.prj-container{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin:40px 0 80px 0;
+}
+.prj-container img{
+  width:90%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+}
+.prj-container .btn-scarica-cv{
+  margin:32px auto 0 auto;
+  width:260px; /* leggermente meno larga per estetica */
+  display:block;
+}
+@media screen and (max-width:640px){
+  .prj-container{margin:24px 0 64px 0;}
+  .prj-container img{width:90%;}
+  .prj-container .btn-scarica-cv{width:90%;}
 }
 
 .service {
@@ -776,31 +800,25 @@ margin-bottom: -40px;
 margin-top: 0;
 padding: 0 24px 24px 24px;
 }
-.hero__content{
-flex-direction:row;
+/* removed left-column layout */
 
-}
-
-.hero__content h1{
+hero__content h1{
   align-items: center;
   margin: auto;
   justify-content: center;
   color: #fff;
   font-size: 1.6rem;
-  margin-bottom: -120px;
-  align-items: baseline;
 }
 
 
 
 
-.hero__links{
-flex-direction: column;
-margin-left:0;
-padding: 24px;
-gap: 16px;
-margin-top: -80px;
-}
+ .hero__links{
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 32px; /* maggiore distanza in mobile */
+  padding: 16px 24px;
+ }
 .hero__link img{
 width: 48px;
 }
@@ -810,13 +828,15 @@ width: 100%;
 display: flex;
 justify-content: center;
 text-align: center;
+flex-direction: column; /* ensure vertical stacking */
+align-items: center; /* center children horizontally */
 }
 
 
 .nome-corto{
 display: block;
 color: #ffffff;
-font-size: 2.4rem;
+font-size: 2rem; /* ridotto per mobile S */
 padding-bottom: 0;
 letter-spacing: 4px;
 margin: auto;
@@ -1048,9 +1068,7 @@ margin: 16px;
   padding: 0 24px 24px 24px;
   margin-top: 0;
 }
-.hero__content{
-  flex-direction:row;
-}
+/* removed left-column layout */
 
   .hero__content h1{
     align-items: center;
@@ -1058,18 +1076,17 @@ margin: 16px;
     justify-content: center;
     color: #fff;
     font-size: 1.6rem;
-    margin-bottom: -48px;
   }
 
 
 
 
-.hero__links{
-flex-direction: column;
-margin-left:0;
-padding: 24px;
-gap: 16px;
-}
+ .hero__links{
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 40px; /* maggiore distanza */
+  padding: 16px 24px;
+ }
 .hero__link img{
   width: 48px;
 }
@@ -1079,6 +1096,8 @@ gap: 16px;
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column; /* ensure vertical stacking */
+  align-items: center;
 }
 
 
@@ -1299,9 +1318,7 @@ gap: 16px;
   padding: 0 24px 24px 24px;
   margin-top:0;
 }
-.hero__content{
-  flex-direction:row;
-}
+/* removed left-column layout */
 
   .hero__content h1{
     align-items: center;
@@ -1309,16 +1326,15 @@ gap: 16px;
     justify-content: center;
     color: #fff;
     font-size: 2.8rem;
-    margin-bottom: -48px;
   }
 
 
-.hero__links{
-flex-direction: column;
-margin-left:0;
-padding: 24px;
-gap: 16px;
-}
+ .hero__links{
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 48px; /* maggiore distanza tablet */
+  padding: 16px 32px;
+ }
 .hero__link img{
   width: 48px;
 }
@@ -1329,16 +1345,20 @@ gap: 16px;
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column; /* ensure vertical stacking */
+  align-items: center;
 }
+/* Mostra il nome corto anche su tablet */
 .nome-corto{
-  display: none;
+  display: block;
+  font-size: 4rem;
+  color: #ffffff;
+  letter-spacing: 4px;
+  margin: auto;
 }
 
 .nome-lungo{
-  font-size: 4rem;
-  padding-bottom: 0;
-  letter-spacing: 4px;
-  margin: auto;
+  display: none;
 }
 
 
@@ -1476,6 +1496,36 @@ gap: 16px;
 }
 .hero{
   height: 100vh;}
+}
+
+/* Ruolo sotto il nome centrato */
+.hero-role {
+  font-size: 2.8rem;
+  margin: 4px 0 0 0; /* piu vicino al nome */
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* piccolo spazio fra prefix e ruolo */
+  flex-wrap: wrap;
+}
+.hero-role .role-prefix {
+  font-family: 'Damion', cursive;
+  color: #ffffff;
+  font-weight: 400;
+}
+.hero-role .role-main {
+  color: #6eff00; /* colore richiesto */
+}
+
+@media screen and (max-width: 640px) {
+  .hero-role {font-size: 1.5rem; margin-top: 0; gap:8px;} /* ridotto per mobile S */
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .hero-role {font-size: 2.2rem;}
 }
 
 

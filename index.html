@@ -22,9 +22,10 @@
 
     <title>Portfolio Francesca Occhilupo Ux Ui designer</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Google Fonts: Poppins (primary) & Damion (accent) -->
+  <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <link rel="icon" href="assets/img/FaviconFra.ico" type="image/x-icon">
 
@@ -41,43 +42,35 @@
 
   <nav class="navbar">
     <a href="index.html" aria-label="Pagina principale">
-      <img src="assets/img/Logo.svg" alt="Logo Occhilupoof" class="logo">
+      <img src="assets/img/Occhilupoof.svg" alt="Logo Occhilupoof" class="logo">
     </a>
     <div class="nav-links" id="navLinks" role="navigation">
-        <a href="#profilo" aria-label="Vai alla sezione Profilo">Profilo</a>
-        <a href="#servizi" aria-label="Vai alla sezione Servizi">Servizi</a>
+        <a href="#profilo" aria-label="Vai alla sezione Su di me">Su di me</a>
         <a href="#progetti" aria-label="Vai alla sezione Progetti">Progetti</a>
-        <a href="https://drive.google.com/file/d/1hb3xXUEd_xIV6SFaD_sGTG4UGuIyKgJT/view?usp=sharing" aria-label="Scarica il CV">CV</a>
+        <a href="#servizi" aria-label="Vai alla sezione Servizi">Servizi</a>
         <button class="contact-button" onclick="window.location.href='#contatti'" aria-label="Vai alla sezione Contatti">Contattami</button>
     </div>
     <div class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Apri menu">☰</div>
-</nav>
+  </nav>
+  <!-- HERO -->
+  <div class="name">
+    <p class="nome-lungo" aria-label="Nome completo: Francesca Occhilupo">Francesca Occhilupo</p>
+    <p class="nome-corto" aria-label="Nome abbreviato: Francesca O.">Francesca O.</p>
+    <h1 class="hero-role" aria-label="Ruolo: Junior UX/UI designer"><span class="role-prefix" aria-hidden="true">Jr.</span> <span class="role-main">UX/UI DESIGNER</span></h1>
+  </div>
 
-
-
-<!--HERO-->
-
-      <div class="hero__content">
-
-
-        <div class="hero__links" role="navigation" aria-label="Link ai social media">
-          <a href="https://dribbble.com/Occhilupo" class="link-social" aria-label="Vai al profilo Dribbble">
-            <img src="assets/img/dribbleG.svg" alt="Link Dribble" loading="lazy">
-          </a>
-          <a href="https://www.behance.net/francesocchilu" class="link-social" aria-label="Vai al profilo Behance">
-            <img src="assets/img/behanceG.svg" alt="Link Behance" loading="lazy">
-          </a>
-          <a href="https://www.linkedin.com/in/occhilupodesigner/" class="link-social" aria-label="Vai al profilo LinkedIn">
-            <img src="assets/img/linkedinG.svg" alt="Link Linkedin" loading="lazy">
-          </a>
-        </div>
-
-      <h1>Ux/Ui designer</h1></div>
-
-      <div class="name">
-        <p class="nome-lungo" aria-label="Nome completo: Francesca Occhilupo">Francesca Occhilupo</p>
-        <p class="nome-corto" aria-label="Nome abbreviato: Francesca O.">Francesca O.</p>
-      </div>
+  <div class="hero__links" role="navigation" aria-label="Link ai social media">
+    <a href="https://www.linkedin.com/in/occhilupodesigner/" class="link-social" aria-label="Vai al profilo LinkedIn">
+      <img src="assets/img/linkedin-logo.svg" alt="Link Linkedin" loading="lazy">
+    </a>
+    <a href="https://www.behance.net/francesocchilu" class="link-social" aria-label="Vai al profilo Behance">
+      <img src="assets/img/behance-logo.svg" alt="Link Behance" loading="lazy">
+    </a>
+    <a href="https://dribbble.com/Occhilupo" class="link-social" aria-label="Vai al profilo Dribbble">
+      <img src="assets/img/dribble-logo.svg" alt="Link Dribbble" loading="lazy">
+    </a>
+  </div>
+  
 </div>
 
 <!--SU DI ME-->
@@ -92,7 +85,7 @@
 <div class="profile">
   <div class="profile-content">
   <div class="profile-img-container">
-    <img src="assets/img/Fotofrancesca.png" alt="Un mio selfie e la foto della mia bellissima gatta ficcanaso" loading="lazy"></div>
+    <img src="assets/img/fotofra-2025.png" alt="Un mio selfie e la foto della mia bellissima gatta ficcanaso" loading="lazy"></div>
 <div class="accordion">
 <details>
   <summary>Chi sono</summary>
@@ -125,30 +118,6 @@
 </a>
 </div>
 
-
-<!--SERVIZI-->
-
-<div class="section-header" id="servizi">
-  <h2>In cosa posso aiutarti?</h2>
-  <p>Qui ho riassunto in modo chiaro ciò che posso fare per te. </p>
-</div>
-
-<div class="services-container">
-  <div class="service" aria-labelledby="ux-service">
-    <h3 id="ux-service"><span>01 </span>User Experience (UX)</h3>
-    <div class="services__p"><p>Studio utenti e bisogni per creare esperienze su misura. Analizzo la concorrenza per trovare soluzioni migliori e definisco utenti e interazioni per ottimizzare l’esperienza. Organizzo le informazioni in modo chiaro, progetto bozze e prototipi interattivi, testo il design con gli utenti, raccolgo feedback e lo ottimizzo. </p></div>
-  </div>
-  <div class="service" aria-labelledby="ui-service">
-    <h3 id="ui-service"><span>02 </span>User Interface (UI)</h3>
-    <div class="services__p"><p>Progetto interfacce intuitive e accessibili, creando guide visive e librerie grafiche per un design coerente. Realizzo versioni realistiche del prodotto e arricchisco l’esperienza con effetti visivi. Mi assicuro che tutto funzioni al meglio su computer, tablet e smartphone.  </p></div>
-  </div>
-  <div class="service" aria-labelledby="visual-design-service">
-    <h3 id="visual-design-service"><span>03 </span>Visual Design</h3>
-    <div class="services__p"><p>Aiuto a definire i valori, gli obiettivi e lo stile di un brand. Analizzo clienti e concorrenza per creare un’identità visiva unica, scegliendo colori, font e grafiche. Progetto loghi distintivi, rinnovo quelli esistenti e li adatto a diversi formati. Creo moodboard e disegno pagine web che valorizzano il brand.  </p></div>
-  </div>
-</div>
-
-
 <!--CARD PROGETTI-->
 
 <div class="section-header" id="progetti">
@@ -156,9 +125,14 @@
   <p>Qui puoi scoprire tutti i progetti che ho realizzato. </p>
 </div>
 
+<div class="prj-container">
+  <img src="assets/img/cover-marta.jpg" alt="">
+  <button class="btn-scarica-cv">Vedi il progetto</button>
+</div>
 
 
-<div class="important-projects">
+
+<!-- <div class="important-projects">
   <div class="important-card" role="region" aria-labelledby="iv-project">
     <div class="card-image">
       <img src="assets/img/iVegan-case-study.jpg" alt="Anteprima UxUi Case Study iVegan" loading="lazy">
@@ -207,6 +181,32 @@
 
 
 </div>
+ -->
+
+<!--SERVIZI-->
+
+<div class="section-header" id="servizi">
+  <h2>In cosa posso aiutarti?</h2>
+  <p>Qui ho riassunto in modo chiaro ciò che posso fare per te. </p>
+</div>
+
+<div class="services-container">
+  <div class="service" aria-labelledby="ux-service">
+    <h3 id="ux-service"><span>01 </span>User Experience (UX)</h3>
+    <div class="services__p"><p>Studio utenti e bisogni per creare esperienze su misura. Analizzo la concorrenza per trovare soluzioni migliori e definisco utenti e interazioni per ottimizzare l’esperienza. Organizzo le informazioni in modo chiaro, progetto bozze e prototipi interattivi, testo il design con gli utenti, raccolgo feedback e lo ottimizzo. </p></div>
+  </div>
+  <div class="service" aria-labelledby="ui-service">
+    <h3 id="ui-service"><span>02 </span>User Interface (UI)</h3>
+    <div class="services__p"><p>Progetto interfacce intuitive e accessibili, creando guide visive e librerie grafiche per un design coerente. Realizzo versioni realistiche del prodotto e arricchisco l’esperienza con effetti visivi. Mi assicuro che tutto funzioni al meglio su computer, tablet e smartphone.  </p></div>
+  </div>
+  <div class="service" aria-labelledby="visual-design-service">
+    <h3 id="visual-design-service"><span>03 </span>Visual Design</h3>
+    <div class="services__p"><p>Aiuto a definire i valori, gli obiettivi e lo stile di un brand. Analizzo clienti e concorrenza per creare un’identità visiva unica, scegliendo colori, font e grafiche. Progetto loghi distintivi, rinnovo quelli esistenti e li adatto a diversi formati. Creo moodboard e disegno pagine web che valorizzano il brand.  </p></div>
+  </div>
+</div>
+
+
+
 
 <!--FORM CONTATTI-->
 
