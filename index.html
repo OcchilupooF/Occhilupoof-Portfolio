@@ -1,313 +1,258 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+  <!-- Meta tag essenziali -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="title" content="Occhilupoof Portfolio - Francesca Occhilupo">
+  <meta name="description" content="Benvenuto nel mio portfolio! Qui trovi informazioni su di me e i miei progetti di UX/UI design.">
+  <meta name="keywords" content="portfolio, web design, UX/UI, UX/UI design, grafica, sviluppo front-end, start2impact, visual design">
+  <meta name="author" content="Occhilupoof - Francesca Occhilupo">
+  <meta name="robots" content="index, follow">
 
- <!-- Meta tag essenziali -->
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <meta name="title" content="Occhilupoof Portfolio - Francesca Occhilupo">
- <meta name="description" content="Benvenuto nel mio portfolio! Qui trovi informazioni su di me e i miei progetti di UX/UI design.">
- <meta name="keywords" content="portfolio, web design, UX/UI, UX/UI design, grafica, sviluppo front-end, start2impact, visual design">
- <meta name="author" content="Occhilupoof - Francesca Occhilupo">
- <meta name="robots" content="index, follow">
+  <!-- Open Graph (per social media) -->
+  <meta property="og:title" content="Occhilupoof Portfolio - Francesca Occhilupo">
+  <meta property="og:description" content="👋 Ciao! Questo è il mio portfolio. Scopri i miei progetti di UX/UI design.">
+  <meta property="og:image" content="https://github.com/OcchilupooF/Occhilupoof-Portfolio/blob/main/assets/img/OG.jpg?raw=true">
+  <meta property="og:url" content="https://occhilupoof.github.io/Occhilupoof-Portfolio/">
+  <meta property="og:type" content="website">
 
- <!-- Open Graph (per social media) -->
- <meta property="og:title" content="Occhilupoof Portfolio - Francesca Occhilupo">
- <meta property="og:description" content="👋 Ciao! Questo è il mio portfolio. Scopri i miei progetti di UX/UI design.">
- <meta property="og:image" content="https://github.com/OcchilupooF/Occhilupoof-Portfolio/blob/main/assets/img/OG.jpg?raw=true">
- <meta property="og:url" content="https://occhilupoof.github.io/Occhilupoof-Portfolio/">
- <meta property="og:type" content="website">
+  <title>Portfolio Francesca Occhilupo UX/UI Designer</title>
 
-
-    <title>Portfolio Francesca Occhilupo Ux Ui designer</title>
-
+  <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+
   <!-- Google Fonts: Poppins (primary) & Damion (accent) -->
   <link href="https://fonts.googleapis.com/css2?family=Damion&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="icon" href="assets/img/FaviconFra.ico" type="image/x-icon">
-
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/FaviconFra.ico" type="image/x-icon">
 </head>
- <body id="top">
 
+<body id="top">
 
+  <!-- NAVBAR -->
+  <div class="hero">
+    <nav class="navbar">
+      <a href="index.html" aria-label="Pagina principale">
+        <img src="assets/img/Occhilupoof.svg" alt="Logo Occhilupoof" class="logo">
+      </a>
 
-
-<!--NAVBAR-->
-
-<div class="hero">
-
-
-  <nav class="navbar">
-    <a href="index.html" aria-label="Pagina principale">
-      <img src="assets/img/Occhilupoof.svg" alt="Logo Occhilupoof" class="logo">
-    </a>
-    <div class="nav-links" id="navLinks" role="navigation">
+      <div class="nav-links" id="navLinks" role="navigation">
         <a href="#profilo" aria-label="Vai alla sezione Su di me">Su di me</a>
         <a href="#progetti" aria-label="Vai alla sezione Progetti">Progetti</a>
         <a href="#servizi" aria-label="Vai alla sezione Servizi">Servizi</a>
-        <button class="contact-button" onclick="window.location.href='#contatti'" aria-label="Vai alla sezione Contatti">Contattami</button>
-    </div>
-    <div class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Apri menu">☰</div>
-  </nav>
-  <!-- HERO -->
-  <div class="name">
-    <p class="nome-lungo" aria-label="Nome completo: Francesca Occhilupo">Francesca Occhilupo</p>
-    <p class="nome-corto" aria-label="Nome abbreviato: Francesca O.">Francesca O.</p>
-    <h1 class="hero-role" aria-label="Ruolo: Junior UX/UI designer"><span class="role-prefix" aria-hidden="true">Jr.</span> <span class="role-main">UX/UI DESIGNER</span></h1>
-  </div>
-
-  <div class="hero__links" role="navigation" aria-label="Link ai social media">
-    <a href="https://www.linkedin.com/in/occhilupodesigner/" class="link-social" aria-label="Vai al profilo LinkedIn">
-      <img src="assets/img/linkedin-logo.svg" alt="Link Linkedin" loading="lazy">
-    </a>
-    <a href="https://www.behance.net/francesocchilu" class="link-social" aria-label="Vai al profilo Behance">
-      <img src="assets/img/behance-logo.svg" alt="Link Behance" loading="lazy">
-    </a>
-    <a href="https://dribbble.com/Occhilupo" class="link-social" aria-label="Vai al profilo Dribbble">
-      <img src="assets/img/dribble-logo.svg" alt="Link Dribbble" loading="lazy">
-    </a>
-  </div>
-  
-</div>
-
-<!--SU DI ME-->
-
-<div class="section-header" id="profilo">
-  <h2>Su di me </h2>
-  <p>Amo semplificare le cose complesse.</p>
-</div>
-
-
-
-<div class="profile">
-  <div class="profile-content">
-  <div class="profile-img-container">
-    <img src="assets/img/fotofra-2025.png" alt="Un mio selfie e la foto della mia bellissima gatta ficcanaso" loading="lazy"></div>
-<div class="accordion">
-<details>
-  <summary>Chi sono</summary>
-  <p>Ciao!👋 Sono <b><em>Francesca Occhilupo</em></b>, una Ux/Ui Designer in erba 🌱.
-    <br>"Mi sono diplomata in un istituto d'arte, dove ho sviluppato competenze creative e progettuali. Nel frattempo, ho lavorato nella ristorazione e in altri settori,  esperienze che mi hanno insegnato l'<b>umiltà</b>, l'<b>ascolto</b> e l'<b>empatia</b>, oltre a rafforzare le mie capacità organizzative e di problem solving.
-    <br>Oggi, attraverso il design, posso mettere in pratica tutto ciò che ho imparato per creare soluzioni belle e funzionali, capaci di rispondere ai bisogni di persone e clienti.
-    <br>Per me è come un puzzle: <b>ogni competenza, ogni esperienza è un tassello essenziale per arrivare al risultato finale. </b></p>
-</details>
-
-<details>
-  <summary>Il mio approccio al design </summary>
-  <p>In un mondo pieno di stimoli e distrazioni, credo che la semplicità sia fondamentale.
-    <br>Mi piacciono i design chiari, essenziali e funzionali, che vanno dritti al punto senza fronzoli. <strong>Voglio creare esperienze che facciano "respirare" le persone, offrendo un momento di chiarezza nella frenesia quotidiana.</strong>
-    <br>Sono ancora all’inizio del mio percorso, ma il mio obiettivo è affinare sempre di più le mie competenze per progettare soluzioni che semplifichino la vita delle persone, senza aggiungere complessità superflue.
-  <br><strong>Credo che la tecnologia debba migliorare la vita delle persone, senza distrarle da ciò che conta davvero, ma anzi, aiutarle ad apprezzarlo ancora di più. </strong></p>
-</details>
-
-<details>
-  <summary>Cose che amo </summary>
-  <p>Amo la natura e preferisco di gran lunga una passeggiata al parco piuttosto che una cena in un ristorante. Mi rigenero con le escursioni in montagna o con una passeggiata all’aria aperta.
-    <br>Sono una persona mattiniera e amo iniziare la giornata con calma, godendomi i piccoli momenti.
-    <br>Adoro gli animali, TUTTI gli animali, e amo dipingere e disegnare. Quando sono stressata, ballo 💃 – e sì, forse è buffo, ma mi fa sentire subito meglio!
-    <br>Sono sincera e diretta, <b>amo le conversazioni che vanno dritte al punto e mi piace aiutare le persone.</b>
-    <br>Adoro i film e le serie che lasciano qualcosa dentro, quelle che ti fanno riflettere e insegnano qualcosa.</p>
-</details>
-</div>
-</div>
-<a href="https://drive.google.com/file/d/1hb3xXUEd_xIV6SFaD_sGTG4UGuIyKgJT/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Scarica il mio CV">
-  <button class="btn-scarica-cv">Scarica il mio CV</button>
-</a>
-</div>
-
-<!--CARD PROGETTI-->
-
-<div class="section-header" id="progetti">
-  <h2>Progetti</h2>
-  <p>Qui puoi scoprire tutti i progetti che ho realizzato. </p>
-</div>
-
-<div class="prj-container">
-  <img src="assets/img/cover-marta.png" alt="">
-  <button class="btn-scarica-cv">Vedi il progetto</button>
-</div>
-
-<div class="prj-container">
-  <img src="assets/img/cover-marta.png" alt="">
-  <button class="btn-scarica-cv">Vedi il progetto</button>
-</div>
-
-<!-- <div class="important-projects">
-  <div class="important-card" role="region" aria-labelledby="iv-project">
-    <div class="card-image">
-      <img src="assets/img/iVegan-case-study.jpg" alt="Anteprima UxUi Case Study iVegan" loading="lazy">
-    </div>
-    <div class="card-content">
-      <h3 id="iv-project">Ux/Ui case study iVegan</h3>
-      <p>Progetto <b>Diviso in sezioni</b></p>
-      <div class="argoment-div">
-        <p class="argoment">Discovery</p>
-        <p class="argoment">Accessibility</p>
-        <p class="argoment">Wireframing</p>
-        <p class="argoment">User Interface</p>
-        <p class="argoment">User Test</p>
+        <button class="button-primary" onclick="window.location.href='#contatti'" aria-label="Vai alla sezione Contatti">Contattami</button>
       </div>
-      <a href="Case-study-iVegan.html" aria-label="Vai al caso studio iVegan">Vai al caso studio</a>
+
+      <div class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Apri menu">☰</div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="name">
+      <p class="nome-lungo" aria-label="Nome completo: Francesca Occhilupo">Francesca Occhilupo</p>
+      <p class="nome-corto" aria-label="Nome abbreviato: Francesca O.">Francesca O.</p>
+      <h1>UX/UI DESIGNER</h1>
     </div>
-  </div>
-</div>
 
-
-
-
-<div class="card-container">
-
-
-  <div class="card" role="region" aria-labelledby="intro-project">
-    <img src="assets/img/Progetto-intro.jpg" alt="Anteprima Progetto Introduttivo del mio corso" loading="lazy">
-    <h3 id="intro-project">Progetto introduttivo S2I </h3>
-    <p>Contenuto: <b>Realizzazione wireframe - Phenix </b></p>
-    <a href="https://drive.google.com/file/d/1qdEiazVpV3NPoqo7Et01OaWkGMYX0P2k/view?usp=sharing" aria-label="Vedi il progetto introduttivo S2I">Vedi il progetto</a>
-  </div>
-
-  <div class="card" role="region" aria-labelledby="graphic-project">
-    <img src="assets/img/grafica.jpg" alt="Anteprima Progetto di Grafica" loading="lazy">
-    <h3 id="graphic-project">Progetto Grafica </h3>
-    <p>Contenuto: <b>Brand guidelines - Orizon </b></p>
-    <a href="https://drive.google.com/file/d/11GM1RhFRBACY2KrOEqMarKoR9HO5W7TE/view?usp=sharing" aria-label="Vedi il progetto di grafica">Vedi il progetto</a>
-  </div>
-
-  <div class="card" role="region" aria-labelledby="copywriting-project">
-    <img src="assets/img/copywriting.jpg" alt="Anteprima Progetto di Copywriting" loading="lazy">
-    <h3 id="copywriting-project">Progetto Copywriting  </h3>
-    <p>Contenuto: <b>Stesura di un articolo - Krèas </b></p>
-    <a href="https://drive.google.com/file/d/1iC7nr0WOOX3US0TuDYC-ppK-qMTKcbAv/view?usp=sharing" aria-label="Vedi il progetto di copywriting">Vedi il progetto</a>
-  </div>
-
-
-</div>
- -->
-
-<!--SERVIZI-->
-
-<!-- CERTIFICATI -->
-<div class="section-header" id="certificati">
-  <h2>Certificati</h2>
-  <p>I traguardi ottenuti durante il mio percorso formativo.</p>
-</div>
-
-<div class="cert-carousel" aria-label="Carosello certificati">
-  <div class="carousel-window" tabindex="0">
-    <ul class="carousel-track" aria-live="polite">
-      <li class="slide"><img src="assets/img/Certificati/Accessibilità_Certificato.svg" alt="Certificato Accessibilità"></li>
-      <li class="slide"><img src="assets/img/Certificati/AI_e_Prompt_Engineering_Certificato.svg" alt="Certificato AI e Prompt Engineering"></li>
-      <li class="slide"><img src="assets/img/Certificati/Copywriting_Certificato.svg" alt="Certificato Copywriting"></li>
-      <li class="slide"><img src="assets/img/Certificati/Desgn_e_Sviluppo_Certificato.svg" alt="Certificato Design e Sviluppo"></li>
-      <li class="slide"><img src="assets/img/Certificati/Discovery_Certificato.svg" alt="Certificato Discovery"></li>
-      <li class="slide"><img src="assets/img/Certificati/Grafica_Certificato.svg" alt="Certificato Grafica"></li>
-      <li class="slide"><img src="assets/img/Certificati/HTML_e_CSS_Certificato.svg" alt="Certificato HTML e CSS"></li>
-      <li class="slide"><img src="assets/img/Certificati/Introduzione_ai_Social_Media_Certificato.svg" alt="Certificato Introduzione ai Social Media"></li>
-      <li class="slide"><img src="assets/img/Certificati/Introduzione_al_Digital_Marketing_Certificato.svg" alt="Certificato Introduzione al Digital Marketing"></li>
-      <li class="slide"><img src="assets/img/Certificati/Introduzione_al_UXUI_Design_Certificato.svg" alt="Certificato Introduzione al UX/UI Design"></li>
-      <li class="slide"><img src="assets/img/Certificati/Public_Speaking_Certificato.svg" alt="Certificato Public Speaking"></li>
-      <li class="slide"><img src="assets/img/Certificati/Trovare_Lavoro_Certificato.svg" alt="Certificato Trovare Lavoro"></li>
-      <li class="slide"><img src="assets/img/Certificati/User_Interface_Certificato.svg" alt="Certificato User Interface"></li>
-      <li class="slide"><img src="assets/img/Certificati/User_Test_Certificato.svg" alt="Certificato User Test"></li>
-      <li class="slide"><img src="assets/img/Certificati/Wireframing_Certificato.svg" alt="Certificato Wireframing"></li>
-      <!-- Duplicazione per loop infinito -->
-      <li class="slide"><img src="assets/img/Certificati/Accessibilità_Certificato.svg" alt="Certificato Accessibilità"></li>
-      <li class="slide"><img src="assets/img/Certificati/AI_e_Prompt_Engineering_Certificato.svg" alt="Certificato AI e Prompt Engineering"></li>
-      <li class="slide"><img src="assets/img/Certificati/Copywriting_Certificato.svg" alt="Certificato Copywriting"></li>
-      <li class="slide"><img src="assets/img/Certificati/Desgn_e_Sviluppo_Certificato.svg" alt="Certificato Design e Sviluppo"></li>
-      <li class="slide"><img src="assets/img/Certificati/Discovery_Certificato.svg" alt="Certificato Discovery"></li>
-      <li class="slide"><img src="assets/img/Certificati/Grafica_Certificato.svg" alt="Certificato Grafica"></li>
-      <li class="slide"><img src="assets/img/Certificati/HTML_e_CSS_Certificato.svg" alt="Certificato HTML e CSS"></li>
-      <li class="slide"><img src="assets/img/Certificati/Introduzione_ai_Social_Media_Certificato.svg" alt="Certificato Introduzione ai Social Media"></li>
-      <li class="slide"><img src="assets/img/Certificati/Introduzione_al_Digital_Marketing_Certificato.svg" alt="Certificato Introduzione al Digital Marketing"></li>
-      <li class="slide"><img src="assets/img/Certificati/Introduzione_al_UXUI_Design_Certificato.svg" alt="Certificato Introduzione al UX/UI Design"></li>
-      <li class="slide"><img src="assets/img/Certificati/Public_Speaking_Certificato.svg" alt="Certificato Public Speaking"></li>
-      <li class="slide"><img src="assets/img/Certificati/Trovare_Lavoro_Certificato.svg" alt="Certificato Trovare Lavoro"></li>
-      <li class="slide"><img src="assets/img/Certificati/User_Interface_Certificato.svg" alt="Certificato User Interface"></li>
-      <li class="slide"><img src="assets/img/Certificati/User_Test_Certificato.svg" alt="Certificato User Test"></li>
-      <li class="slide"><img src="assets/img/Certificati/Wireframing_Certificato.svg" alt="Certificato Wireframing"></li>
-    </ul>
-  </div>
-</div>
-
-
-<div class="section-header" id="servizi">
-  <h2>Servizi</h2>
-  <p>Qui ho riassunto in modo chiaro ciò che posso fare per te. </p>
-</div>
-
-<div class="services-container">
-  <div class="service" aria-labelledby="ux-service">
-    <h3 id="ux-service"><span>01 </span>User Experience (UX)</h3>
-    <div class="services__p"><p>Analizzo utenti e bisogni per progettare esperienze digitali semplici ed efficaci. Studio la concorrenza per individuare opportunità, organizzo i contenuti in modo chiaro e creo prototipi interattivi. Testo le soluzioni con le persone, raccolgo feedback e ottimizzo il design per garantire usabilità e valore reale.</p></div>
-  </div>
-  <div class="service" aria-labelledby="ui-service">
-    <h3 id="ui-service"><span>02 </span>User Interface (UI)</h3>
-    <div class="services__p"><p>Progetto interfacce intuitive, accessibili e visivamente coerenti. Creo sistemi grafici e linee guida per mantenere uno stile chiaro e riconoscibile. Sviluppo mockup realistici, arricchisco l'esperienza con dettagli visivi curati e assicuro un design responsive su computer, tablet e smartphone.</p></div>
-  </div>
-  <div class="service" aria-labelledby="visual-design-service">
-    <h3 id="visual-design-service"><span>03 </span>Brand & Visual Design</h3>
-    <div class="services__p"><p>Aiuto a definire i valori, gli obiettivi e lo stile di un brand. Analizzo clienti e concorrenza per creare un’identità visiva unica, scegliendo colori, font e grafiche. Progetto loghi distintivi, rinnovo quelli esistenti e li adatto a diversi formati. Creo moodboard e disegno pagine web che valorizzano il brand.  </p></div>
-  </div>
-</div>
-
-
-
-
-<!--FORM CONTATTI-->
-
-<div class="section-header" id="contatti">
-  <h2>Contattami </h2>
-  <p>Hai domande o un progetto in mente? <b>Parliamone! </b></p>
-</div>
-
-<div class="container-form">
-  <a class="contact-button" href="mailto:occhilupodesigner@gmail.com" aria-label="Mandami una e-mail">
-    Mandami una e-mail
-  </a>
-  <a class="btn-scarica-cv whatsapp-btn" href="https://wa.me/393451263159?text=Ciao%20Francesca%2C%20ti%20scrivo%20dal%20tuo%20portfolio" target="_blank" rel="noopener" aria-label="Scrivimi su Whatsapp">
-    Scrivimi su Whatsapp <img src="assets/img/whatsapp.svg" alt="Whatsapp" style="width:20px;vertical-align:middle;margin-left:8px;">
-  </a>
-</div>
-
-
-<!--FOOTER-->
-
-
-<footer>
-  <div class="footer-content">
-
-    <div class="logo">
-      <a href="#top" aria-label="Torna alla parte superiore della pagina">
-        <img src="assets/img/Occhilupoof.svg" alt="Logo Occhilupoof">
+    <div class="hero__links" role="navigation" aria-label="Link ai social media">
+      <a href="https://www.linkedin.com/in/occhilupodesigner/" class="link-social" aria-label="Vai al profilo LinkedIn">
+        <img src="assets/img/linkedin-logo.svg" alt="Link Linkedin" loading="lazy">
+      </a>
+      <a href="https://www.behance.net/francesocchilu" class="link-social" aria-label="Vai al profilo Behance">
+        <img src="assets/img/behance-logo.svg" alt="Link Behance" loading="lazy">
+      </a>
+      <a href="https://dribbble.com/Occhilupo" class="link-social" aria-label="Vai al profilo Dribbble">
+        <img src="assets/img/dribble-logo.svg" alt="Link Dribbble" loading="lazy">
       </a>
     </div>
+  </div>
 
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/occhilupodesigner/" target="_blank" class="social-icon" aria-label="Visita il mio profilo LinkedIn">LinkedIn</a>
-      <a href="https://dribbble.com/Occhilupo" target="_blank" class="social-icon" aria-label="Visita il mio profilo Dribbble">Dribbble</a>
-      <a href="https://www.behance.net/francesocchilu" target="_blank" class="social-icon" aria-label="Visita il mio profilo Behance">Behance</a>
-      <a href="https://www.instagram.com/occhilupoof/" target="_blank" class="social-icon" aria-label="Visita il mio profilo Instagram">Instagram</a>
-      <a href="https://www.facebook.com/francesca.occhilupo.5" target="_blank" class="social-icon" aria-label="Visita il mio profilo Facebook">Facebook</a>
-      <a href="https://github.com/OcchilupooF" target="_blank" class="social-icon" aria-label="Visita il mio profilo GitHub">GitHub</a>
+  <!-- SU DI ME -->
+  <div class="section-header" id="profilo">
+    <h2>Su di me</h2>
+    <p>Una piccola intro per raccontarti chi sono davvero.</p>
+  </div>
+
+  <div class="profile">
+    <div class="profile-content">
+      <div class="profile-img-container">
+        <img src="assets/img/fotofra-2025.png" alt="Una mia foto in cui sorrido" loading="lazy">
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>Chi sono</summary>
+          <p>Mi chiamo <b><em>Francesca Occhilupo</em></b> e sono una UX/UI Designer in erba 🌱.
+            <br>Mi sono diplomata in un istituto d'arte, dove ho sviluppato competenze creative e progettuali. Nel frattempo, ho lavorato nella ristorazione e in altri settori, esperienze che mi hanno insegnato l'<b>umiltà</b>, l'<b>ascolto</b> e l'<b>empatia</b>, oltre a rafforzare le mie capacità organizzative e di problem solving.
+            <br>Oggi, attraverso il design, posso mettere in pratica tutto ciò che ho imparato per creare soluzioni belle e funzionali, capaci di rispondere ai bisogni di persone e clienti.
+          </p>
+        </details>
+
+        <details>
+          <summary>Il mio approccio al design</summary>
+          <p>In un mondo pieno di stimoli e distrazioni, credo che la semplicità sia fondamentale.
+            <br>Mi piacciono i design chiari, essenziali e funzionali, che vanno dritti al punto senza fronzoli. <strong>Voglio creare esperienze che facciano "respirare" le persone, offrendo un momento di chiarezza nella frenesia quotidiana.</strong>
+            <br>Sono ancora all’inizio del mio percorso, ma il mio obiettivo è affinare sempre di più le mie competenze per progettare soluzioni che semplifichino la vita delle persone, senza aggiungere complessità superflue.
+            <br><strong>Credo che la tecnologia debba migliorare la vita delle persone, senza distrarle da ciò che conta davvero, ma anzi, aiutarle ad apprezzarlo ancora di più.</strong>
+          </p>
+        </details>
+
+        <details>
+          <summary>Cose che amo</summary>
+          <p>Amo la natura e preferisco di gran lunga una passeggiata al parco piuttosto che una cena in un ristorante. <b>Mi rigenero con le escursioni in montagna o con una passeggiata all’aria aperta.</b>
+            <br>Sono una persona mattiniera e amo iniziare la giornata con calma, godendomi i piccoli momenti. Adoro gli animali, TUTTI gli animali, e amo dipingere e disegnare. Quando sono stressata, ballo per rilassarmi. Adoro i film e le serie che lasciano qualcosa dentro, quelle che ti fanno riflettere e insegnano qualcosa.
+            <br>Non ho paura dei giudizi delle altre persone, ma apprezzo le critiche costruttive.
+            <br>Sono sincera e diretta, <b>amo le conversazioni che vanno dritte al punto e mi piace aiutare le persone.</b>
+          </p>
+        </details>
+      </div>
     </div>
 
-    <div class="contact-info">
-      <p>&copy; 2025 Occhilupoof - Francesca Occhilupo. Tutti i diritti riservati.</p>
+    <a href="https://drive.google.com/file/d/1SgGXLiozSEOm2oNjaEdZeMnixAgwENMs/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Scarica il mio CV">
+      <button class="button-secondary">Scarica il mio CV</button>
+    </a>
+  </div>
+
+  <!-- PROGETTI -->
+  <div class="section-header" id="progetti">
+    <h2>Progetti</h2>
+    <p>Qui puoi scoprire tutti i progetti che ho realizzato.</p>
+  </div>
+
+  <div class="prj-container">
+    <img src="assets/img/cover-marta-2025.png" alt="immagine di copertina del progetto Marta:museo archeologico nazionale di Taranto">
+    <a href="https://drive.google.com/file/d/1duMM1E4pwO-t3KQJSpuQoWd48yFLZ2pu/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="vedi il progetto Marta">
+      <button class="button-secondary">Vedi il progetto</button>
+    </a>
+  </div>
+
+  <div class="prj-container">
+    <img src="assets/img/cover-portfolio-s2i.png" alt="immagine di copertina del portfolio dei miei progetti formativi">
+    <a href="https://drive.google.com/file/d/1XcQ8VqLsz25F22eRAeGMhknuobLfd_8R/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="vedi il portfolio formativo">
+      <button class="button-secondary">Vedi il portfolio</button>
+    </a>
+  </div>
+
+  <!-- CERTIFICATI -->
+  <div class="section-header" id="certificati">
+    <h2>Certificati</h2>
+    <p>I traguardi ottenuti durante il mio percorso formativo.</p>
+  </div>
+
+  <div class="cert-carousel" aria-label="Carosello certificati">
+    <div class="carousel-window" tabindex="0">
+      <ul class="carousel-track" aria-live="polite">
+        <!-- Lista dei certificati -->
+        <li class="slide"><img src="assets/img/Certificati/Accessibilità_Certificato.svg" alt="Certificato Accessibilità"></li>
+        <li class="slide"><img src="assets/img/Certificati/AI_e_Prompt_Engineering_Certificato.svg" alt="Certificato AI e Prompt Engineering"></li>
+        <li class="slide"><img src="assets/img/Certificati/Copywriting_Certificato.svg" alt="Certificato Copywriting"></li>
+        <li class="slide"><img src="assets/img/Certificati/Desgn_e_Sviluppo_Certificato.svg" alt="Certificato Design e Sviluppo"></li>
+        <li class="slide"><img src="assets/img/Certificati/Discovery_Certificato.svg" alt="Certificato Discovery"></li>
+        <li class="slide"><img src="assets/img/Certificati/Grafica_Certificato.svg" alt="Certificato Grafica"></li>
+        <li class="slide"><img src="assets/img/Certificati/HTML_e_CSS_Certificato.svg" alt="Certificato HTML e CSS"></li>
+        <li class="slide"><img src="assets/img/Certificati/Introduzione_ai_Social_Media_Certificato.svg" alt="Certificato Introduzione ai Social Media"></li>
+        <li class="slide"><img src="assets/img/Certificati/Introduzione_al_Digital_Marketing_Certificato.svg" alt="Certificato Introduzione al Digital Marketing"></li>
+        <li class="slide"><img src="assets/img/Certificati/Introduzione_al_UXUI_Design_Certificato.svg" alt="Certificato Introduzione al UX/UI Design"></li>
+        <li class="slide"><img src="assets/img/Certificati/Public_Speaking_Certificato.svg" alt="Certificato Public Speaking"></li>
+        <li class="slide"><img src="assets/img/Certificati/Trovare_Lavoro_Certificato.svg" alt="Certificato Trovare Lavoro"></li>
+        <li class="slide"><img src="assets/img/Certificati/User_Interface_Certificato.svg" alt="Certificato User Interface"></li>
+        <li class="slide"><img src="assets/img/Certificati/User_Test_Certificato.svg" alt="Certificato User Test"></li>
+        <li class="slide"><img src="assets/img/Certificati/Wireframing_Certificato.svg" alt="Certificato Wireframing"></li>
+        <!-- Duplicazione per loop infinito -->
+        <li class="slide"><img src="assets/img/Certificati/Accessibilità_Certificato.svg" alt="Certificato Accessibilità"></li>
+        <li class="slide"><img src="assets/img/Certificati/AI_e_Prompt_Engineering_Certificato.svg" alt="Certificato AI e Prompt Engineering"></li>
+        <li class="slide"><img src="assets/img/Certificati/Copywriting_Certificato.svg" alt="Certificato Copywriting"></li>
+        <li class="slide"><img src="assets/img/Certificati/Desgn_e_Sviluppo_Certificato.svg" alt="Certificato Design e Sviluppo"></li>
+        <li class="slide"><img src="assets/img/Certificati/Discovery_Certificato.svg" alt="Certificato Discovery"></li>
+        <li class="slide"><img src="assets/img/Certificati/Grafica_Certificato.svg" alt="Certificato Grafica"></li>
+        <li class="slide"><img src="assets/img/Certificati/HTML_e_CSS_Certificato.svg" alt="Certificato HTML e CSS"></li>
+        <li class="slide"><img src="assets/img/Certificati/Introduzione_ai_Social_Media_Certificato.svg" alt="Certificato Introduzione ai Social Media"></li>
+        <li class="slide"><img src="assets/img/Certificati/Introduzione_al_Digital_Marketing_Certificato.svg" alt="Certificato Introduzione al Digital Marketing"></li>
+        <li class="slide"><img src="assets/img/Certificati/Introduzione_al_UXUI_Design_Certificato.svg" alt="Certificato Introduzione al UX/UI Design"></li>
+        <li class="slide"><img src="assets/img/Certificati/Public_Speaking_Certificato.svg" alt="Certificato Public Speaking"></li>
+        <li class="slide"><img src="assets/img/Certificati/Trovare_Lavoro_Certificato.svg" alt="Certificato Trovare Lavoro"></li>
+        <li class="slide"><img src="assets/img/Certificati/User_Interface_Certificato.svg" alt="Certificato User Interface"></li>
+        <li class="slide"><img src="assets/img/Certificati/User_Test_Certificato.svg" alt="Certificato User Test"></li>
+        <li class="slide"><img src="assets/img/Certificati/Wireframing_Certificato.svg" alt="Certificato Wireframing"></li>
+      </ul>
     </div>
   </div>
-</footer>
 
+  <!-- SERVIZI -->
+  <div class="section-header" id="servizi">
+    <h2>Servizi</h2>
+    <p>Qui ho riassunto in modo chiaro ciò che posso fare per te.</p>
+  </div>
 
+  <div class="services-container">
+    <div class="service" aria-labelledby="ux-service">
+      <h3 id="ux-service"><span>01 </span>User Experience (UX)</h3>
+      <div class="services__p">
+        <p>Analizzo utenti e bisogni per progettare esperienze digitali semplici ed efficaci. Studio la concorrenza per individuare opportunità, organizzo i contenuti in modo chiaro e creo prototipi interattivi. Testo le soluzioni con le persone, raccolgo feedback e ottimizzo il design per garantire usabilità e valore reale.</p>
+      </div>
+    </div>
 
+    <div class="service" aria-labelledby="ui-service">
+      <h3 id="ui-service"><span>02 </span>User Interface (UI)</h3>
+      <div class="services__p">
+        <p>Progetto interfacce intuitive, accessibili e visivamente coerenti. Creo sistemi grafici e linee guida per mantenere uno stile chiaro e riconoscibile. Sviluppo mockup realistici, arricchisco l'esperienza con dettagli visivi curati e assicuro un design responsive su computer, tablet e smartphone.</p>
+      </div>
+    </div>
 
+    <div class="service" aria-labelledby="visual-design-service">
+      <h3 id="visual-design-service"><span>03 </span>Brand & Visual Design</h3>
+      <div class="services__p">
+        <p>Aiuto a definire i valori, gli obiettivi e lo stile di un brand. Analizzo clienti e concorrenza per creare un’identità visiva unica, scegliendo colori, font e grafiche. Progetto loghi distintivi, rinnovo quelli esistenti e li adatto a diversi formati. Creo moodboard e disegno pagine web che valorizzano il brand.</p>
+      </div>
+    </div>
+  </div>
 
+  <!-- CONTATTI -->
+  <div class="section-header" id="contatti">
+    <h2>Contattami</h2>
+    <p>Hai domande o un progetto in mente? <b>Parliamone!</b></p>
+  </div>
 
-<script src="assets/js/script.js"></script>
+  <div class="container-form">
+    <a href="mailto:occhilupodesigner@gmail.com" target="_blank" rel="noopener" aria-label="Mandami una e-mail">
+      <button class="button-primary">Mandami una e-mail</button>
+    </a>
 
+    <a href="https://wa.me/393451263159?text=Ciao%20Francesca%2C%20ti%20scrivo%20dal%20tuo%20portfolio" target="_blank" rel="noopener" aria-label="Scrivimi su Whatsapp">
+      <button class="button-secondary">
+        Scrivimi su Whatsapp
+        <img src="assets/img/whatsapp.svg" alt="Whatsapp" style="width:20px;vertical-align:middle;margin-left:8px;">
+      </button>
+    </a>
+  </div>
 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <a href="#top" aria-label="Torna alla parte superiore della pagina">
+          <img src="assets/img/Occhilupoof.svg" alt="Logo Occhilupoof">
+        </a>
+      </div>
 
- </body>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/occhilupodesigner/" target="_blank" class="social-icon" aria-label="Visita il mio profilo LinkedIn">LinkedIn</a>
+        <a href="https://dribbble.com/Occhilupo" target="_blank" class="social-icon" aria-label="Visita il mio profilo Dribbble">Dribbble</a>
+        <a href="https://www.behance.net/francesocchilu" target="_blank" class="social-icon" aria-label="Visita il mio profilo Behance">Behance</a>
+        <a href="https://www.instagram.com/occhilupoof/" target="_blank" class="social-icon" aria-label="Visita il mio profilo Instagram">Instagram</a>
+        <a href="https://www.facebook.com/francesca.occhilupo.5" target="_blank" class="social-icon" aria-label="Visita il mio profilo Facebook">Facebook</a>
+        <a href="https://github.com/OcchilupooF" target="_blank" class="social-icon" aria-label="Visita il mio profilo GitHub">GitHub</a>
+      </div>
+
+      <div class="contact-info">
+        <p>&copy; 2025 Occhilupoof - Francesca Occhilupo. Tutti i diritti riservati.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
 </html>
