@@ -31,7 +31,7 @@ body { background: #ffffff; }
 /* SECTION HEADER */
 .section-header {
   text-align: center;
-  margin: 80px 24px 40px 24px;
+  margin: 140px 24px 40px 24px;
   padding: 0;
 }
 .section-header h1 { color: #000; }
@@ -119,12 +119,12 @@ body { background: #ffffff; }
 .button-primary:active { box-shadow: none; transform: translateY(0); }
 
 .button-secondary {
-  background-color: #6EFF00;
+  background-color: #9BE463;
   color: #000;
 }
 .button-secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(110,255,0,0.16), 0 2px 6px rgba(110,255,0,0.10);
+  box-shadow: 0 6px 18px rgba(155, 228, 99, 0.45);
 }
 .button-secondary:active { box-shadow: none; transform: translateY(0); }
 
@@ -216,8 +216,7 @@ body { background: #ffffff; }
 }
 .profile-content {
   display: flex;
-  max-width: 1200px;
-  width: 100%;
+  width: 80%;
   align-items: center;
   justify-content: center;
   gap: 64px;
@@ -229,7 +228,7 @@ body { background: #ffffff; }
   align-items: center;
 }
 .profile-img-container img { width: 100%; height: auto; object-fit: cover; }
-.accordion { width: 70%; }
+.accordion { width: 100%; }
 
 details {
   margin-bottom: 24px;
@@ -321,7 +320,7 @@ details[open] p { max-height: 500px; opacity: 1; }
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  margin-bottom: 80px;
+  margin-bottom: 140px;
 }
 .container-form a { display: block; }
 .container-form button { width: auto; }
@@ -453,6 +452,8 @@ footer {
   .container-form button { width: 100%; }
   .hero-role { font-size: 2.2rem; }
   .nome-lungo { font-size: 6rem; }
+  .details { width: 100%;}
+  .accordion { width: 100%; }
 }
 
 @media screen and (min-width: 1025px) {
